@@ -1,0 +1,3 @@
+[submodule "ztdriver"]
+	path = ztdriver
+	url = git@github.com:zabbix-byte/ztdriver.git

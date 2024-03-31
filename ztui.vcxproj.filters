@@ -44,9 +44,6 @@
     <ClCompile Include="ztui\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="ztui\gui.hpp">
-      <Filter>Header Files</Filter>
-    </ClCompile>
     <ClCompile Include="imgui\imgui.cpp">
       <Filter>Header Files</Filter>
     </ClCompile>
