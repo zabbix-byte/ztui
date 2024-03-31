@@ -149,6 +149,8 @@
     <ClCompile Include="imgui\imgui_tables.cpp" />
     <ClCompile Include="imgui\imgui_widgets.cpp" />
     <ClCompile Include="ztui\main.cpp" />
+    <ClCompile Include="ztui\main.hpp" />
+    <ClCompile Include="ztui\aplication_loop.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
