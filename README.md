@@ -5,7 +5,7 @@
 [![Python Version](https://img.shields.io/badge/x64-blue?style=for-the-badge&logo=windows&logoColor=white)](https://www.python.org/downloads/)
 [![Github-sponsors](https://img.shields.io/badge/sponsor-30363D?style=for-the-badge&logo=GitHub-Sponsors&logoColor=white)](https://github.com/sponsors/zabbix-byte)
 
-Introducing a simple cheat base with an overlay and menu. This is just the beginning! Our features include an overlay, an easy-to-use menu with test options, hide and close buttons, and customizable themes. Stay tuned for more improvements!
+Introducing a simple cheat base with an overlay and menu. This is just the beginnin, features include an overlay, an easy-to-use menu with test options, hide and close button, and customizable themes!
 
 ![image](https://github.com/zabbix-byte/ztui/assets/67012651/b5223600-92c7-4002-83e8-762f3ac8a3f4)
 
