@@ -7,7 +7,7 @@
 
 Introducing a simple cheat base with an overlay and menu. This is just the beginnin, features include an overlay, an easy-to-use menu with test options, hide and close button, and customizable themes!
 
-![image](https://github.com/zabbix-byte/ztui/assets/67012651/b5223600-92c7-4002-83e8-762f3ac8a3f4)
+![image](https://github.com/zabbix-byte/ztui/assets/67012651/b792e3a3-0084-4e10-8e41-03d8cd54dcd3)
 
 ### Acknowledgements and Credits
  - [OS-ImGui](https://github.com/TKazer/OS-ImGui)
