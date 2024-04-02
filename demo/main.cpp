@@ -1,9 +1,12 @@
+#include <thread>
+
 #include <iostream>
-#include "ztui.h"
 #include "main_menu.h"
 #include "globals.h"
-#include <thread>
 #include "drawn_cheat.h"
+
+// ztui
+#include "../ztui/ztui.h"
 
 static std::string dest_window_name = "Counter-Strike 2";
 static std::string dest_window_class_name = "SDL_app";

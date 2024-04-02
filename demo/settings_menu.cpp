@@ -1,7 +1,9 @@
 #include "settings_menu.h"
 #include "imgui_elements_utils.h"
-#include "style/palet.h"
-#include "ztui.h"
+
+// ztui
+#include "../ztui/style/palet.h"
+#include "../ztui/ztui.h"
 
 
 void settings_menu()

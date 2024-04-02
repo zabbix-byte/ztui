@@ -13,141 +13,138 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="Header Files\imgui">
+    <Filter Include="Header Files\ztui">
+      <UniqueIdentifier>{78aa98ed-2832-4ce9-88c9-14cc84d6e779}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ztui\style">
+      <UniqueIdentifier>{4a1a6738-b4e8-407d-a369-5305a0760303}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ztui\imgui">
       <UniqueIdentifier>{324ddbeb-c5ee-4934-bb1d-b0f1b0f5d27d}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\font">
+    <Filter Include="Header Files\ztui\font">
       <UniqueIdentifier>{d0bce9ae-4f55-4fd4-bee1-2aa07a1f45e8}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\style">
-      <UniqueIdentifier>{4a1a6738-b4e8-407d-a369-5305a0760303}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="ztui\ztui_struct.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ztui\ztui_external.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ztui\ztui_exception.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ztui\ztui_base.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ztui\ztui.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="ztui\imgui\imstb_truetype.h">
-      <Filter>Header Files\imgui</Filter>
+      <Filter>Header Files\ztui\imgui</Filter>
     </ClInclude>
     <ClInclude Include="ztui\imgui\imstb_textedit.h">
-      <Filter>Header Files\imgui</Filter>
+      <Filter>Header Files\ztui\imgui</Filter>
     </ClInclude>
     <ClInclude Include="ztui\imgui\imstb_rectpack.h">
-      <Filter>Header Files\imgui</Filter>
+      <Filter>Header Files\ztui\imgui</Filter>
     </ClInclude>
     <ClInclude Include="ztui\imgui\imgui_internal.h">
-      <Filter>Header Files\imgui</Filter>
+      <Filter>Header Files\ztui\imgui</Filter>
     </ClInclude>
     <ClInclude Include="ztui\imgui\imgui_impl_win32.h">
-      <Filter>Header Files\imgui</Filter>
+      <Filter>Header Files\ztui\imgui</Filter>
     </ClInclude>
     <ClInclude Include="ztui\imgui\imgui_impl_dx11.h">
-      <Filter>Header Files\imgui</Filter>
+      <Filter>Header Files\ztui\imgui</Filter>
     </ClInclude>
     <ClInclude Include="ztui\imgui\imgui.h">
-      <Filter>Header Files\imgui</Filter>
+      <Filter>Header Files\ztui\imgui</Filter>
     </ClInclude>
     <ClInclude Include="ztui\imgui\imconfig.h">
-      <Filter>Header Files\imgui</Filter>
+      <Filter>Header Files\ztui\imgui</Filter>
     </ClInclude>
     <ClInclude Include="ztui\font\font_array.h">
-      <Filter>Header Files\font</Filter>
+      <Filter>Header Files\ztui\font</Filter>
     </ClInclude>
     <ClInclude Include="ztui\font\icons_font_awesome.h">
-      <Filter>Header Files\font</Filter>
-    </ClInclude>
-    <ClInclude Include="ztui\utils.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\ztui\font</Filter>
     </ClInclude>
     <ClInclude Include="ztui\style\style.h">
-      <Filter>Header Files\style</Filter>
+      <Filter>Header Files\ztui\style</Filter>
     </ClInclude>
-    <ClInclude Include="ztui\imgui_elements_utils.h">
+    <ClInclude Include="demo\imgui_elements_utils.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="ztui\globals.h">
+    <ClInclude Include="demo\globals.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="ztui\main_menu.h">
+    <ClInclude Include="demo\main_menu.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="ztui\demo_menu.h">
+    <ClInclude Include="demo\demo_menu.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="ztui\style\palet.h">
-      <Filter>Header Files\style</Filter>
+      <Filter>Header Files\ztui\style</Filter>
     </ClInclude>
-    <ClInclude Include="ztui\settings_menu.h">
+    <ClInclude Include="demo\settings_menu.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="ztui\drawn_cheat.h">
+    <ClInclude Include="demo\drawn_cheat.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ztui\ztui.h">
+      <Filter>Header Files\ztui</Filter>
+    </ClInclude>
+    <ClInclude Include="ztui\ztui_base.h">
+      <Filter>Header Files\ztui</Filter>
+    </ClInclude>
+    <ClInclude Include="ztui\ztui_exception.hpp">
+      <Filter>Header Files\ztui</Filter>
+    </ClInclude>
+    <ClInclude Include="ztui\ztui_external.h">
+      <Filter>Header Files\ztui</Filter>
+    </ClInclude>
+    <ClInclude Include="ztui\ztui_struct.h">
+      <Filter>Header Files\ztui</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="ztui\ztui_external.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="ztui\ztui_base.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="ztui\ztui.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="ztui\main.cpp">
+    <ClCompile Include="demo\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="ztui\imgui\imgui_widgets.cpp">
-      <Filter>Header Files\imgui</Filter>
+      <Filter>Header Files\ztui\imgui</Filter>
     </ClCompile>
     <ClCompile Include="ztui\imgui\imgui_tables.cpp">
-      <Filter>Header Files\imgui</Filter>
+      <Filter>Header Files\ztui\imgui</Filter>
     </ClCompile>
     <ClCompile Include="ztui\imgui\imgui_impl_dx11.cpp">
-      <Filter>Header Files\imgui</Filter>
+      <Filter>Header Files\ztui\imgui</Filter>
     </ClCompile>
     <ClCompile Include="ztui\imgui\imgui_impl_win32.cpp">
-      <Filter>Header Files\imgui</Filter>
+      <Filter>Header Files\ztui\imgui</Filter>
     </ClCompile>
     <ClCompile Include="ztui\imgui\imgui_draw.cpp">
-      <Filter>Header Files\imgui</Filter>
+      <Filter>Header Files\ztui\imgui</Filter>
     </ClCompile>
     <ClCompile Include="ztui\imgui\imgui_demo.cpp">
-      <Filter>Header Files\imgui</Filter>
+      <Filter>Header Files\ztui\imgui</Filter>
     </ClCompile>
     <ClCompile Include="ztui\imgui\imgui.cpp">
-      <Filter>Header Files\imgui</Filter>
+      <Filter>Header Files\ztui\imgui</Filter>
     </ClCompile>
-    <ClCompile Include="ztui\imgui_elements_utils.cpp">
+    <ClCompile Include="demo\imgui_elements_utils.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="ztui\utils.cpp">
+    <ClCompile Include="demo\main_menu.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="ztui\main_menu.cpp">
+    <ClCompile Include="demo\demo_menu.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="ztui\demo_menu.cpp">
+    <ClCompile Include="demo\settings_menu.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="ztui\settings_menu.cpp">
+    <ClCompile Include="demo\drawn_cheat.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="ztui\drawn_cheat.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="ztui\ztui_external.cpp">
+      <Filter>Header Files\ztui</Filter>
+    </ClCompile>
+    <ClCompile Include="ztui\ztui_base.cpp">
+      <Filter>Header Files\ztui</Filter>
+    </ClCompile>
+    <ClCompile Include="ztui\ztui.cpp">
+      <Filter>Header Files\ztui</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

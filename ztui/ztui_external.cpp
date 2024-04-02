@@ -1,5 +1,5 @@
 #include "ztui_external.h"
-#include "globals.h"
+
 
 // D3D11 Device
 namespace Ztui
@@ -61,7 +61,6 @@ namespace Ztui
 #endif
 }
 
-// OSImGui External
 namespace Ztui
 {
 

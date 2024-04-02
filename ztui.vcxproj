@@ -19,11 +19,11 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="ztui\demo_menu.h" />
-    <ClInclude Include="ztui\drawn_cheat.h" />
+    <ClInclude Include="demo\demo_menu.h" />
+    <ClInclude Include="demo\drawn_cheat.h" />
     <ClInclude Include="ztui\font\font_array.h" />
     <ClInclude Include="ztui\font\icons_font_awesome.h" />
-    <ClInclude Include="ztui\globals.h" />
+    <ClInclude Include="demo\globals.h" />
     <ClInclude Include="ztui\imgui\imconfig.h" />
     <ClInclude Include="ztui\imgui\imgui.h" />
     <ClInclude Include="ztui\imgui\imgui_impl_dx11.h" />
@@ -32,12 +32,11 @@
     <ClInclude Include="ztui\imgui\imstb_rectpack.h" />
     <ClInclude Include="ztui\imgui\imstb_textedit.h" />
     <ClInclude Include="ztui\imgui\imstb_truetype.h" />
-    <ClInclude Include="ztui\imgui_elements_utils.h" />
-    <ClInclude Include="ztui\main_menu.h" />
-    <ClInclude Include="ztui\settings_menu.h" />
+    <ClInclude Include="demo\imgui_elements_utils.h" />
+    <ClInclude Include="demo\main_menu.h" />
+    <ClInclude Include="demo\settings_menu.h" />
     <ClInclude Include="ztui\style\palet.h" />
     <ClInclude Include="ztui\style\style.h" />
-    <ClInclude Include="ztui\utils.h" />
     <ClInclude Include="ztui\ztui.h" />
     <ClInclude Include="ztui\ztui_base.h" />
     <ClInclude Include="ztui\ztui_exception.hpp" />
@@ -45,9 +44,9 @@
     <ClInclude Include="ztui\ztui_struct.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="ztui\demo_menu.cpp" />
-    <ClCompile Include="ztui\drawn_cheat.cpp" />
-    <ClCompile Include="ztui\imgui_elements_utils.cpp" />
+    <ClCompile Include="demo\demo_menu.cpp" />
+    <ClCompile Include="demo\drawn_cheat.cpp" />
+    <ClCompile Include="demo\imgui_elements_utils.cpp" />
     <ClCompile Include="ztui\imgui\imgui.cpp" />
     <ClCompile Include="ztui\imgui\imgui_demo.cpp" />
     <ClCompile Include="ztui\imgui\imgui_draw.cpp" />
@@ -55,10 +54,9 @@
     <ClCompile Include="ztui\imgui\imgui_impl_win32.cpp" />
     <ClCompile Include="ztui\imgui\imgui_tables.cpp" />
     <ClCompile Include="ztui\imgui\imgui_widgets.cpp" />
-    <ClCompile Include="ztui\main.cpp" />
-    <ClCompile Include="ztui\main_menu.cpp" />
-    <ClCompile Include="ztui\settings_menu.cpp" />
-    <ClCompile Include="ztui\utils.cpp" />
+    <ClCompile Include="demo\main.cpp" />
+    <ClCompile Include="demo\main_menu.cpp" />
+    <ClCompile Include="demo\settings_menu.cpp" />
     <ClCompile Include="ztui\ztui.cpp" />
     <ClCompile Include="ztui\ztui_base.cpp" />
     <ClCompile Include="ztui\ztui_external.cpp" />

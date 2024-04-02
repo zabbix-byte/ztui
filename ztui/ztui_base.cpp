@@ -9,25 +9,19 @@ namespace Ztui
         ImGui::CreateContext();
         ImGuiIO& io = ImGui::GetIO();
         io.Fonts->AddFontDefault();
-        (void)io;
 
         ImFontAtlas* fontAtlas = new ImFontAtlas();
 
-        ImFontConfig arialConfig;
-        arialConfig.FontDataOwnedByAtlas = false;
-        // Todo: And check this to, becouse i dont like Verdana.
-        ImFont* arialFont = fontAtlas->AddFontFromFileTTF("C:\\Windows\\Fonts\\Verdana.ttf", 25.f, &arialConfig);
+        ImFontConfig msyhbd_config;
+        msyhbd_config.FontDataOwnedByAtlas = false;
+        ImFont* msyhbd_font = fontAtlas->AddFontFromFileTTF("C:\\Windows\\Fonts\\msyhbd.ttc", 16.f, &msyhbd_config);
 
-        ImFontConfig iconConfig;
+        ImFontConfig icon_config;
         static const ImWchar iconRanges[] = { ICON_MIN_FA, ICON_MAX_FA, 0 };
-        iconConfig.MergeMode = true;
-        iconConfig.PixelSnapH = true;
-        iconConfig.OversampleH = 3;
-        iconConfig.OversampleV = 3;
-        iconConfig.GlyphRanges = iconRanges;
-        iconConfig.FontDataOwnedByAtlas = false;
-        // Todo: Check this some problems with TTF
-        ImFont* iconFont = fontAtlas->AddFontFromMemoryTTF((void*)rawData, sizeof(rawData), 16.f, &iconConfig, iconRanges);
+        icon_config.MergeMode = true;
+        icon_config.PixelSnapH = true;
+        icon_config.GlyphMinAdvanceX = 20.f;
+        ImFont* icon_font = fontAtlas->AddFontFromFileTTF(FONT_ICON_FILE_NAME_FAS, 36.f, &icon_config, iconRanges);
         io.Fonts = fontAtlas;
 
         ImGui::StyleColorsDark();

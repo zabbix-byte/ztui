@@ -1,7 +1,8 @@
 #include "demo_menu.h"
 #include "imgui_elements_utils.h"
-#include "style/palet.h"
-#include "ztui.h"
+
+#include "../ztui/style/palet.h"
+#include "../ztui/ztui.h"
 
 
 void demo_menu()

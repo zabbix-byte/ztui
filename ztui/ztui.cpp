@@ -1,6 +1,5 @@
 #pragma once
 #include "ztui.h"
-#include "globals.h"
 
 
 namespace Ztui

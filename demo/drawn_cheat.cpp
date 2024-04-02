@@ -1,5 +1,5 @@
 #include "drawn_cheat.h";
-#include "ztui.h"
+#include "../ztui/ztui.h"
 
 
 void drawn_cheat()
