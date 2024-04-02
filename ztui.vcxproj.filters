@@ -78,6 +78,24 @@
     <ClInclude Include="ztui\imgui_elements_utils.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="ztui\globals.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ztui\main_menu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ztui\demo_menu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ztui\style\palet.h">
+      <Filter>Header Files\style</Filter>
+    </ClInclude>
+    <ClInclude Include="ztui\settings_menu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ztui\drawn_cheat.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ztui\ztui_external.cpp">
@@ -117,6 +135,18 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="ztui\utils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ztui\main_menu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ztui\demo_menu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ztui\settings_menu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ztui\drawn_cheat.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

@@ -15,7 +15,7 @@ void imgui_elementes::text_centered(const char* fmt, const float size, const flo
 }
 
 
-void imgui_elementes::button(const char* fmt, const float size_font, const float margin, const bool centered, ImVec4 rgba, const ImVec2 size_button)
+bool imgui_elementes::button(const char* fmt, const float size_font, const float margin, const bool centered, ImVec4 rgba, const ImVec2 size_button)
 {
 	ImGui::SetWindowFontScale(size_font);
 	if (centered)
@@ -23,7 +23,8 @@ void imgui_elementes::button(const char* fmt, const float size_font, const float
 	if (margin != -1.f)
 		ImGui::SetCursorPosY(margin);
 	ImGui::PushStyleColor(ImGuiCol_Text, rgba);
-	ImGui::Button(fmt, size_button);
+	bool val = ImGui::Button(fmt, size_button);
 	ImGui::SetWindowFontScale(1.0f);
 	ImGui::PopStyleColor();
+	return val;
 }

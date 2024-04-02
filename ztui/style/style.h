@@ -2,22 +2,13 @@
 #include "../imgui/imgui.h"
 
 
-namespace ztui_theme_palet
-{
-	ImColor primary = ImVec4(ImColor(238, 238, 238, 255));
-	ImColor secundary = ImVec4(ImColor(49, 54, 63, 255));
-	ImColor link = ImVec4(ImColor(118, 171, 174, 255));
-	ImColor background = ImVec4(ImColor(34, 40, 49, 255));
-}
-
-
 void ztui_styling()
 {
 	ImGuiStyle& style = ImGui::GetStyle();
 	style.Alpha = 1.0f;
 	style.DisabledAlpha = 1.0f;
 	style.WindowPadding = ImVec2(12.0f, 12.0f);
-	style.WindowRounding = 11.5f;
+	style.WindowRounding = 5.f;
 	style.WindowBorderSize = 0.0f;
 	style.WindowMinSize = ImVec2(20.0f, 20.0f);
 	style.WindowTitleAlign = ImVec2(0.5f, 0.5f);
@@ -27,7 +18,7 @@ void ztui_styling()
 	style.PopupRounding = 0.0f;
 	style.PopupBorderSize = 1.0f;
 	style.FramePadding = ImVec2(20.0f, 3.400000095367432f);
-	style.FrameRounding = 11.89999961853027f;
+	style.FrameRounding = 5.f;
 	style.FrameBorderSize = 0.0f;
 	style.ItemSpacing = ImVec2(4.300000190734863f, 5.5f);
 	style.ItemInnerSpacing = ImVec2(7.099999904632568f, 1.799999952316284f);
@@ -44,7 +35,7 @@ void ztui_styling()
 	style.ColorButtonPosition = ImGuiDir_Right;
 	style.ButtonTextAlign = ImVec2(0.5f, 0.5f);
 	style.SelectableTextAlign = ImVec2(0.0f, 0.0f);
-
+	
 	style.Colors[ImGuiCol_Text] = ImVec4(1.0f, 1.0f, 1.0f, 1.0f);
 	style.Colors[ImGuiCol_TextDisabled] = ImVec4(0.2745098173618317f, 0.3176470696926117f, 0.4509803950786591f, 1.0f);
 	style.Colors[ImGuiCol_WindowBg] = ImVec4(0.0784313753247261f, 0.08627451211214066f, 0.1019607856869698f, 1.0f);

@@ -1,7 +1,8 @@
 #pragma once
 #include "ztui.h"
+#include "globals.h"
 
-// OS-ImGui Draw
+
 namespace Ztui
 {
     void Ztui::Text(std::string Text, Vec2 Pos, ImColor Color, float FontSize, bool KeepCenter)

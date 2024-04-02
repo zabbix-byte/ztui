@@ -1,4 +1,5 @@
 #include "ztui_external.h"
+#include "globals.h"
 
 // D3D11 Device
 namespace Ztui
@@ -149,6 +150,7 @@ namespace Ztui
 
     void ZtuiExternal::MainLoop()
     {
+
         while (!EndFlag)
         {
             if (PeekEndMessage())
@@ -173,6 +175,7 @@ namespace Ztui
 
             g_Device.g_pSwapChain->Present(1, 0); // Present with vs
         }
+        std::cout << "[ztui] just closed!";
         CleanImGui();
     }
 
