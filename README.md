@@ -9,8 +9,6 @@ Introducing a simple cheat base with an overlay and menu. This is just the begin
 
 ![image](https://github.com/zabbix-byte/ztui/assets/67012651/b5223600-92c7-4002-83e8-762f3ac8a3f4)
 
-
-
 ### Acknowledgements and Credits
  - [OS-ImGui](https://github.com/TKazer/OS-ImGui)
  - [imgui](https://github.com/ocornut/imgui)
