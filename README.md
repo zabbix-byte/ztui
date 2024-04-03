@@ -10,7 +10,11 @@
 
 A user-friendly overlay and menu, Explore features like an intuitive menu with test options, handy hide and close buttons, and customizable themes! 🚀
 
-![image](https://github.com/zabbix-byte/ztui/assets/67012651/333f5ae7-8a6c-4c8c-bfd4-a6e7a0ccaaae)
+![image](https://github.com/zabbix-byte/ztui/assets/67012651/c0759acb-1d5a-4ebd-a163-2645ff9e8de3)
+
+
+### Customizable (make it yours)
+![image](https://github.com/zabbix-byte/ztui/assets/67012651/dabbf249-5a52-4e49-bfed-6f11282131c7)
 
 ### Acknowledgements and Credits
  - [OS-ImGui](https://github.com/TKazer/OS-ImGui)
