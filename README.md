@@ -8,7 +8,7 @@
 
 **Introducing a cutting-edge cheat base! 🌟**
 
-A user-friendly overlay and menu, this is just the beginning. Explore features like an intuitive menu with test options, handy hide and close buttons, and customizable themes to enhance your gaming experience! 🚀
+A user-friendly overlay and menu, Explore features like an intuitive menu with test options, handy hide and close buttons, and customizable themes! 🚀
 
 ![image](https://github.com/zabbix-byte/ztui/assets/67012651/333f5ae7-8a6c-4c8c-bfd4-a6e7a0ccaaae)
 
