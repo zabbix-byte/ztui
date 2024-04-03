@@ -4,8 +4,13 @@
 
 void widgets::text_centered(const char* fmt, const float size, const float margin, ImVec4 rgba)
 {
+	ImGui::SetCursorPosX(((ImGui::GetWindowSize().x - ImGui::CalcTextSize(fmt).x) * 0.5f) / size);
+	widgets::text(fmt, size, margin, rgba);
+}
+
+void widgets::text(const char* fmt, const float size, const float margin, ImVec4 rgba)
+{
 	ImGui::SetWindowFontScale(size);
-	ImGui::SetCursorPosX((ImGui::GetWindowSize().x - ImGui::CalcTextSize(fmt).x) * 0.5f);
 	if (margin != -1.f)
 		ImGui::SetCursorPosY(margin);
 	ImGui::PushStyleColor(ImGuiCol_Text, rgba);
@@ -22,10 +27,11 @@ bool widgets::button(
 	const bool centered,
 	ImVec4 rgba, 
 	const ImVec2 size_button,
-	const bool no_hover
+	const bool no_hover,
+	const ImVec4 color
 )
 {
-	widgets_style::style_element_button(no_hover);
+	widgets_style::style_element_button(no_hover, color);
 	ImGui::SetWindowFontScale(size_font);
 	if (centered)
 		ImGui::SetCursorPosX((ImGui::GetWindowSize().x - ImGui::CalcTextSize(fmt).x) * 0.35f);
@@ -33,8 +39,14 @@ bool widgets::button(
 		ImGui::SetCursorPosY(margin);
 	ImGui::PushStyleColor(ImGuiCol_Text, rgba);
 	bool val = ImGui::Button(fmt, size_button);
-	ImGui::SetWindowFontScale(1.0f);
 	ImGui::PopStyleColor();
+	ImGui::SetWindowFontScale(1.0f);
 	ztui_styling();
 	return val;
+}
+
+
+void widgets::space_separator()
+{
+	widgets::text_centered("", 1.0f, -1.f, ztui_theme_palet::primary);
 }

@@ -1,10 +1,12 @@
 #include "main_menu.h"
-#include "../ztui/widgets.h"
+
 #include "demo_menu.h"
 #include "settings_menu.h"
 #include "globals.h"
 
 // ztui
+#include "../ztui/widgets.h"
+#include "../ztui/style/widgets_style.h"
 #include "../ztui/style/style.h"
 #include "../ztui/style/palet.h"
 #include "../ztui/ztui.h"
@@ -12,7 +14,14 @@
 
 void main_menu()
 {
+	ImVec4 settigs_actived = ztui_theme_palet::primary;
+	ImVec4 demo_actived = ztui_theme_palet::primary;
 
+	if (SETTINGS_MENU == true)
+		settigs_actived = ztui_theme_palet::link;
+
+	if (DEMO_MENU == true)
+		demo_actived = ztui_theme_palet::link;
 
 	ImGui::SetNextWindowSize(ImVec2(1200, 600));
 	ImGui::Begin("ZT BASE CHEAT", nullptr, ImGuiWindowFlags_NoCollapse | ImGuiWindowFlags_NoResize | ImGuiWindowFlags_NoTitleBar);
@@ -26,7 +35,7 @@ void main_menu()
 			ImGui::SameLine();
 			ImGui::SetCursorPosX(900.f);
 
-			if (widgets::button(ICON_FA_TIMES, 1.f, 15.f, false, ztui_theme_palet::alert, ImVec2(50.f, 35.f), true))
+			if (widgets::button(ICON_FA_TIMES, 1.3f, 10.f, false, ztui_theme_palet::alert, ImVec2(50.f, 35.f), true))
 			{
 				Gui.Quit();
 			}
@@ -37,71 +46,65 @@ void main_menu()
 			ImGui::SameLine();
 			ImGui::SetCursorPosX(10.f);
 
-			if (widgets::button("SETINGS", 1.0f, 10.f, false, ztui_theme_palet::link))
+			if (widgets::button(ICON_FA_COGS" SETINGS", 1.0f, 10.f, false, settigs_actived))
 			{
 				SETTINGS_MENU = true;
-				RAGE_MENU = false;
+				DEMO_MENU = false;
 			}
 
 
 		} ImGui::EndChild();
 
 		ImGui::SetCursorPos(ImVec2(10, 10));
-
 		if (ImGui::BeginChild(2, ImVec2(200, 578), false))
 		{
-			widgets::text_centered("ZT BASE CHEAT", 1.0f, 10.f, ztui_theme_palet::link);
 
-			if (ImGui::BeginChild(3, ImVec2(200, 520), false))
+			widgets::text_centered(ICON_FA_DRAGON"  ZTUI", 1.f, 32.f, ztui_theme_palet::link);
+			widgets::text_centered("BY ZABBIX", 0.8f, 55.f, ztui_theme_palet::secundary);
+			widgets::space_separator();
+			ImGui::Separator();
+
+			widgets_style::style_padding(14.f, 20.f);
+			if (ImGui::BeginChild(3, ImVec2(200, 450), false, ImGuiWindowFlags_AlwaysUseWindowPadding))
 			{
-				widgets::text_centered("", 1.0f, -1.f, ztui_theme_palet::primary);
-				ImGui::Separator();
+				widgets::text("Main menu", 1.24f, -1.f, ztui_theme_palet::primary);
+				widgets::space_separator();
 
-				widgets::text_centered("AimBot", 1.0f, -1.f, ztui_theme_palet::primary);
-				ImGui::SetCursorPosX(10.f);
-				if (widgets::button("RAGE", 1.0f, -1.f, false, ztui_theme_palet::link))
+				if (widgets::button(ICON_FA_WINDOW_RESTORE"   Elements", 1.0f, -1.f, false, demo_actived))
 				{
 					SETTINGS_MENU = false;
-					RAGE_MENU = true;
+					DEMO_MENU = true;
 				}
-				ImGui::SetCursorPosX(10.f);
-				widgets::button("ANTI-AIM", 1.0f, -1.f, false, ztui_theme_palet::primary);
-				ImGui::SetCursorPosX(10.f);
-				widgets::button("LEGIT-BOT", 1.0f, -1.f, false, ztui_theme_palet::primary);
 
-				widgets::text_centered("", 1.0f, -1.f, ztui_theme_palet::primary);
-				ImGui::Separator();
+				
 
-				widgets::text_centered("Visuals", 1.0f, -1.f, ztui_theme_palet::primary);
-				ImGui::SetCursorPosX(10.f);
-				widgets::button("PLAYER", 1.0f, -1.f, false, ztui_theme_palet::primary);
-				ImGui::SetCursorPosX(10.f);
-				widgets::button("WEAPON", 1.0f, -1.f, false, ztui_theme_palet::primary);
+				widgets::space_separator();
+				widgets::text("Dummy Menu", 1.20f, -1.f, ztui_theme_palet::primary);
+				widgets::space_separator();
 
-				widgets::text_centered("", 1.0f, -1.f, ztui_theme_palet::primary);
-				ImGui::Separator();
+				if (widgets::button(ICON_FA_BASKETBALL_BALL"   Dummy1", 1.0f, -1.f, false, ztui_theme_palet::secundary)) {}
+				if (widgets::button(ICON_FA_BASKETBALL_BALL"   Dummy2", 1.0f, -1.f, false, ztui_theme_palet::secundary)) {}
+				if (widgets::button(ICON_FA_BASKETBALL_BALL"   Dummy3", 1.0f, -1.f, false, ztui_theme_palet::secundary)) {}
+				if (widgets::button(ICON_FA_BASKETBALL_BALL"   Dummy4", 1.0f, -1.f, false, ztui_theme_palet::secundary)) {}
+				if (widgets::button(ICON_FA_BASKETBALL_BALL"   Dummy6", 1.0f, -1.f, false, ztui_theme_palet::secundary)) {}
+				if (widgets::button(ICON_FA_BASKETBALL_BALL"   Dummy7", 1.0f, -1.f, false, ztui_theme_palet::secundary)) {}
+				if (widgets::button(ICON_FA_BASKETBALL_BALL"   Dummy8", 1.0f, -1.f, false, ztui_theme_palet::secundary)) {}
 
-				widgets::text_centered("Misc", 1.0f, -1.f, ztui_theme_palet::primary);
-				ImGui::SetCursorPosX(10.f);
-				widgets::button("BHOP", 1.0f, -1.f, false, ztui_theme_palet::primary);
-				ImGui::SetCursorPosX(10.f);
 
-				widgets::text_centered("", 1.0f, -1.f, ztui_theme_palet::link);
-				ImGui::Separator();
-				widgets::text_centered("BY ZABBIX", 1.f, 501.f, ztui_theme_palet::link);
 			} ImGui::EndChild();
-
+			ztui_styling();
 		} ImGui::EndChild();
 
-		
+		widgets_style::style_padding(30.f, 30.f);
 		ImGui::SetCursorPos(ImVec2(220, 70));
-		if (ImGui::BeginChild(6, ImVec2(970, 517), false))
+		if (ImGui::BeginChild(6, ImVec2(970, 517), false, ImGuiWindowFlags_AlwaysUseWindowPadding))
 		{
 			if (SETTINGS_MENU)
 				settings_menu();
-			if (RAGE_MENU)
+			if (DEMO_MENU)
 				demo_menu();
 		} ImGui::EndChild();
+		ztui_styling();
 		
 	}ImGui::End();
 
