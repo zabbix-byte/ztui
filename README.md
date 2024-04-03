@@ -10,8 +10,7 @@
 
 A user-friendly overlay and menu, this is just the beginning. Explore features like an intuitive menu with test options, handy hide and close buttons, and customizable themes to enhance your gaming experience! 🚀
 
-![image](https://github.com/zabbix-byte/ztui/assets/67012651/3dbf6b84-ce00-4c31-8f26-d80332a7c555)
-
+![image](https://github.com/zabbix-byte/ztui/assets/67012651/333f5ae7-8a6c-4c8c-bfd4-a6e7a0ccaaae)
 
 ### Acknowledgements and Credits
  - [OS-ImGui](https://github.com/TKazer/OS-ImGui)
