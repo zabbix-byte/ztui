@@ -21,6 +21,10 @@
   <ItemGroup>
     <ClInclude Include="demo\demo_menu.h" />
     <ClInclude Include="demo\drawn_cheat.h" />
+    <ClInclude Include="ztdriver\ztdriver_client\ztdriver_client\imports.hpp" />
+    <ClInclude Include="ztdriver\ztdriver_client\ztdriver_client\process_utils.hpp" />
+    <ClInclude Include="ztdriver\ztdriver_client\ztdriver_client\zdriver.hpp" />
+    <ClInclude Include="ztdriver\ztdriver_client\ztdriver_client\zdriver_client.hpp" />
     <ClInclude Include="ztui\font\font_array.h" />
     <ClInclude Include="ztui\font\icons_font_awesome.h" />
     <ClInclude Include="demo\globals.h" />

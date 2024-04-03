@@ -25,6 +25,9 @@
     <Filter Include="Header Files\ztui\font">
       <UniqueIdentifier>{d0bce9ae-4f55-4fd4-bee1-2aa07a1f45e8}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\zdriver_client">
+      <UniqueIdentifier>{ecc58cfc-9e9c-4e14-b05e-4df2cc941098}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ztui\imgui\imstb_truetype.h">
@@ -98,6 +101,18 @@
     </ClInclude>
     <ClInclude Include="ztui\style\widgets_style.h">
       <Filter>Header Files\ztui\style</Filter>
+    </ClInclude>
+    <ClInclude Include="ztdriver\ztdriver_client\ztdriver_client\zdriver_client.hpp">
+      <Filter>Header Files\zdriver_client</Filter>
+    </ClInclude>
+    <ClInclude Include="ztdriver\ztdriver_client\ztdriver_client\zdriver.hpp">
+      <Filter>Header Files\zdriver_client</Filter>
+    </ClInclude>
+    <ClInclude Include="ztdriver\ztdriver_client\ztdriver_client\imports.hpp">
+      <Filter>Header Files\zdriver_client</Filter>
+    </ClInclude>
+    <ClInclude Include="ztdriver\ztdriver_client\ztdriver_client\process_utils.hpp">
+      <Filter>Header Files\zdriver_client</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
