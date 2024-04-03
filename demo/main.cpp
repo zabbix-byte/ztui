@@ -34,7 +34,8 @@ void callback()
 		main_menu();
 }
 
-int main()
+
+int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, PSTR lpCmdLine, int nCmdShow)
 {
 	try {
 		Gui.AttachAnotherWindow(dest_window_name, dest_window_class_name, callback);

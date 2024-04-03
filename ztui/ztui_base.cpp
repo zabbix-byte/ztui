@@ -14,14 +14,14 @@ namespace Ztui
 
         ImFontConfig msyhbd_config;
         msyhbd_config.FontDataOwnedByAtlas = false;
-        ImFont* msyhbd_font = fontAtlas->AddFontFromFileTTF("C:\\Windows\\Fonts\\msyhbd.ttc", 16.f, &msyhbd_config);
+        ImFont* msyhbd_font = fontAtlas->AddFontFromFileTTF("ztui\\font\\Roboto-Medium.ttf", 17.f, &msyhbd_config);
 
         ImFontConfig icon_config;
         static const ImWchar iconRanges[] = { ICON_MIN_FA, ICON_MAX_FA, 0 };
         icon_config.MergeMode = true;
         icon_config.PixelSnapH = true;
         icon_config.GlyphMinAdvanceX = 20.f;
-        ImFont* icon_font = fontAtlas->AddFontFromFileTTF(FONT_ICON_FILE_NAME_FAS, 36.f, &icon_config, iconRanges);
+        ImFont* icon_font = fontAtlas->AddFontFromFileTTF("ztui\\font\\fa-solid-900.ttf", 36.f, &icon_config, iconRanges);
         io.Fonts = fontAtlas;
 
         ImGui::StyleColorsDark();

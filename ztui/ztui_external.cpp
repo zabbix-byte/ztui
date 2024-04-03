@@ -174,8 +174,8 @@ namespace Ztui
 
             g_Device.g_pSwapChain->Present(1, 0); // Present with vs
         }
-        std::cout << "[ztui] just closed!";
         CleanImGui();
+        exit(0);
     }
 
     bool ZtuiExternal::CreateMyWindow()

@@ -3,9 +3,9 @@
 #include "palet.h"
 
 
-void ztui_styling()
+static void ztui_styling()
 {
-	ImGuiStyle& style = ImGui::GetStyle();
+	static ImGuiStyle& style = ImGui::GetStyle();
 	style.Alpha = 1.0f;
 	style.DisabledAlpha = 1.0f;
 	style.WindowPadding = ImVec2(12.0f, 12.0f);

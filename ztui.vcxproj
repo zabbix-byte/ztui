@@ -32,21 +32,21 @@
     <ClInclude Include="ztui\imgui\imstb_rectpack.h" />
     <ClInclude Include="ztui\imgui\imstb_textedit.h" />
     <ClInclude Include="ztui\imgui\imstb_truetype.h" />
-    <ClInclude Include="demo\imgui_elements_utils.h" />
     <ClInclude Include="demo\main_menu.h" />
     <ClInclude Include="demo\settings_menu.h" />
     <ClInclude Include="ztui\style\palet.h" />
     <ClInclude Include="ztui\style\style.h" />
+    <ClInclude Include="ztui\style\widgets_style.h" />
+    <ClInclude Include="ztui\widgets.h" />
     <ClInclude Include="ztui\ztui.h" />
     <ClInclude Include="ztui\ztui_base.h" />
-    <ClInclude Include="ztui\ztui_exception.hpp" />
+    <ClInclude Include="ztui\ztui_exception.h" />
     <ClInclude Include="ztui\ztui_external.h" />
     <ClInclude Include="ztui\ztui_struct.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="demo\demo_menu.cpp" />
     <ClCompile Include="demo\drawn_cheat.cpp" />
-    <ClCompile Include="demo\imgui_elements_utils.cpp" />
     <ClCompile Include="ztui\imgui\imgui.cpp" />
     <ClCompile Include="ztui\imgui\imgui_demo.cpp" />
     <ClCompile Include="ztui\imgui\imgui_draw.cpp" />
@@ -57,6 +57,8 @@
     <ClCompile Include="demo\main.cpp" />
     <ClCompile Include="demo\main_menu.cpp" />
     <ClCompile Include="demo\settings_menu.cpp" />
+    <ClCompile Include="ztui\style\widgets_style.cpp" />
+    <ClCompile Include="ztui\widgets.cpp" />
     <ClCompile Include="ztui\ztui.cpp" />
     <ClCompile Include="ztui\ztui_base.cpp" />
     <ClCompile Include="ztui\ztui_external.cpp" />
@@ -150,12 +152,23 @@
       <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Link>
-      <SubSystem>Console</SubSystem>
+      <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalDependencies>d3d11.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalLibraryDirectories>
       </AdditionalLibraryDirectories>
     </Link>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>if "$(ConfigurationName)" == "Release" (
+    if not exist "$(TargetDir)ztui\font" mkdir "$(TargetDir)ztui\font"
+    copy "$(SolutionDir)ztui\font\fa-solid-900.ttf" "$(TargetDir)ztui\font\fa-solid-900.ttf"
+    copy "$(SolutionDir)ztui\font\Roboto-Medium.ttf" "$(TargetDir)ztui\font\Roboto-Medium.ttf"
+)</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
@@ -168,7 +181,7 @@
       <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Link>
-      <SubSystem>Console</SubSystem>
+      <SubSystem>Windows</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -176,6 +189,17 @@
       <AdditionalLibraryDirectories>
       </AdditionalLibraryDirectories>
     </Link>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>if "$(ConfigurationName)" == "Release" (
+    if not exist "$(TargetDir)ztui\font" mkdir "$(TargetDir)ztui\font"
+    copy "$(SolutionDir)ztui\font\fa-solid-900.ttf" "$(TargetDir)ztui\font\fa-solid-900.ttf"
+    copy "$(SolutionDir)ztui\font\Roboto-Medium.ttf" "$(TargetDir)ztui\font\Roboto-Medium.ttf"
+)</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

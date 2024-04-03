@@ -60,9 +60,6 @@
     <ClInclude Include="ztui\style\style.h">
       <Filter>Header Files\ztui\style</Filter>
     </ClInclude>
-    <ClInclude Include="demo\imgui_elements_utils.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="demo\globals.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -87,7 +84,7 @@
     <ClInclude Include="ztui\ztui_base.h">
       <Filter>Header Files\ztui</Filter>
     </ClInclude>
-    <ClInclude Include="ztui\ztui_exception.hpp">
+    <ClInclude Include="ztui\ztui_exception.h">
       <Filter>Header Files\ztui</Filter>
     </ClInclude>
     <ClInclude Include="ztui\ztui_external.h">
@@ -95,6 +92,12 @@
     </ClInclude>
     <ClInclude Include="ztui\ztui_struct.h">
       <Filter>Header Files\ztui</Filter>
+    </ClInclude>
+    <ClInclude Include="ztui\widgets.h">
+      <Filter>Header Files\ztui</Filter>
+    </ClInclude>
+    <ClInclude Include="ztui\style\widgets_style.h">
+      <Filter>Header Files\ztui\style</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -122,9 +125,6 @@
     <ClCompile Include="ztui\imgui\imgui.cpp">
       <Filter>Header Files\ztui\imgui</Filter>
     </ClCompile>
-    <ClCompile Include="demo\imgui_elements_utils.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="demo\main_menu.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -145,6 +145,12 @@
     </ClCompile>
     <ClCompile Include="ztui\ztui.cpp">
       <Filter>Header Files\ztui</Filter>
+    </ClCompile>
+    <ClCompile Include="ztui\widgets.cpp">
+      <Filter>Header Files\ztui</Filter>
+    </ClCompile>
+    <ClCompile Include="ztui\style\widgets_style.cpp">
+      <Filter>Header Files\ztui\style</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

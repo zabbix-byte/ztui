@@ -1,6 +1,6 @@
 #pragma once
 #include "ztui_struct.h"
-#include "ztui_exception.hpp"
+#include "ztui_exception.h"
 #include <iostream>
 #include <string>
 #include <functional>
