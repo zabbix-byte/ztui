@@ -22,7 +22,7 @@ void demo_menu()
 		1.0f,
 		-1.f,
 		false,
-		ztui_theme_palet::link,
+		ztui_theme_palet::active,
 		ImVec2(0, 0),
 		false,
 		ImVec4(0.1176470592617989f, 0.1333333402872086f, 0.1490196138620377f, 1.0f)
@@ -30,7 +30,7 @@ void demo_menu()
 	{
 		if (!color_base_text_actived)
 		{
-			color_base_text = ztui_theme_palet::link;
+			color_base_text = ztui_theme_palet::active;
 			color_base_text_actived = true;
 		}
 		else

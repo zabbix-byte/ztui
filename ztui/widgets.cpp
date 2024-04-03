@@ -41,7 +41,7 @@ bool widgets::button(
 	bool val = ImGui::Button(fmt, size_button);
 	ImGui::PopStyleColor();
 	ImGui::SetWindowFontScale(1.0f);
-	ztui_styling();
+	widgets_style::reset_style_element_button();
 	return val;
 }
 
@@ -50,3 +50,4 @@ void widgets::space_separator()
 {
 	widgets::text_centered("", 1.0f, -1.f, ztui_theme_palet::primary);
 }
+

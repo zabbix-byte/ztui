@@ -2,9 +2,6 @@
 #include "../imgui/imgui.h"
 #include "palet.h"
 
-#define ImGuiCol_ButtonDefault ImVec4(0.1176470592617989f, 0.1333333402872086f, 0.1490196138620377f, 0.0f)
-
-
 static void ztui_styling()
 {
 	static ImGuiStyle& style = ImGui::GetStyle();
@@ -41,8 +38,8 @@ static void ztui_styling()
 	
 	style.Colors[ImGuiCol_Text] = ImVec4(1.0f, 1.0f, 1.0f, 1.0f);
 	style.Colors[ImGuiCol_TextDisabled] = ImVec4(0.2745098173618317f, 0.3176470696926117f, 0.4509803950786591f, 1.0f);
-	style.Colors[ImGuiCol_WindowBg] = ImVec4(0.0784313753247261f, 0.08627451211214066f, 0.1019607856869698f, 1.0f);
-	style.Colors[ImGuiCol_ChildBg] = ImVec4(0.09250493347644806f, 0.100297249853611f, 0.1158798336982727f, 1.0f);
+	style.Colors[ImGuiCol_WindowBg] = ImGuiCol_WindowBgDefault;
+	style.Colors[ImGuiCol_ChildBg] = ImGuiCol_ChildBgDefault;
 	style.Colors[ImGuiCol_PopupBg] = ImVec4(0.0784313753247261f, 0.08627451211214066f, 0.1019607856869698f, 1.0f);
 	style.Colors[ImGuiCol_Border] = ImVec4(0.1568627506494522f, 0.168627455830574f, 0.1921568661928177f, 1.0f);
 	style.Colors[ImGuiCol_BorderShadow] = ImVec4(0.0784313753247261f, 0.08627451211214066f, 0.1019607856869698f, 1.0f);
@@ -61,8 +58,8 @@ static void ztui_styling()
 	style.Colors[ImGuiCol_SliderGrab] = ImVec4(0.971993625164032f, 1.0f, 0.4980392456054688f, 1.0f);
 	style.Colors[ImGuiCol_SliderGrabActive] = ImVec4(1.0f, 0.7953379154205322f, 0.4980392456054688f, 1.0f);
 	style.Colors[ImGuiCol_Button] = ImGuiCol_ButtonDefault;
-	style.Colors[ImGuiCol_ButtonHovered] = ImVec4(0.1821731775999069f, 0.1897992044687271f, 0.1974248886108398f, 1.0f);
-	style.Colors[ImGuiCol_ButtonActive] = ImVec4(0.1545050293207169f, 0.1545048952102661f, 0.1545064449310303f, 1.0f);
+	style.Colors[ImGuiCol_ButtonHovered] = ImGuiCol_ButtonHoveredDefault;
+	style.Colors[ImGuiCol_ButtonActive] = ImGuiCol_ButtonActiveDefault;
 	style.Colors[ImGuiCol_Header] = ImVec4(0.1414651423692703f, 0.1629818230867386f, 0.2060086131095886f, 1.0f);
 	style.Colors[ImGuiCol_HeaderHovered] = ImVec4(0.1072951927781105f, 0.107295036315918f, 0.1072961091995239f, 1.0f);
 	style.Colors[ImGuiCol_HeaderActive] = ImVec4(0.0784313753247261f, 0.08627451211214066f, 0.1019607856869698f, 1.0f);

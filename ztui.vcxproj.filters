@@ -75,9 +75,6 @@
     <ClInclude Include="ztui\style\palet.h">
       <Filter>Header Files\ztui\style</Filter>
     </ClInclude>
-    <ClInclude Include="demo\settings_menu.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="demo\drawn_cheat.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -144,9 +141,6 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="demo\demo_menu.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="demo\settings_menu.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="demo\drawn_cheat.cpp">

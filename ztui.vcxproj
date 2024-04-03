@@ -37,7 +37,6 @@
     <ClInclude Include="ztui\imgui\imstb_textedit.h" />
     <ClInclude Include="ztui\imgui\imstb_truetype.h" />
     <ClInclude Include="demo\main_menu.h" />
-    <ClInclude Include="demo\settings_menu.h" />
     <ClInclude Include="ztui\style\palet.h" />
     <ClInclude Include="ztui\style\style.h" />
     <ClInclude Include="ztui\style\widgets_style.h" />
@@ -60,7 +59,6 @@
     <ClCompile Include="ztui\imgui\imgui_widgets.cpp" />
     <ClCompile Include="demo\main.cpp" />
     <ClCompile Include="demo\main_menu.cpp" />
-    <ClCompile Include="demo\settings_menu.cpp" />
     <ClCompile Include="ztui\style\widgets_style.cpp" />
     <ClCompile Include="ztui\widgets.cpp" />
     <ClCompile Include="ztui\ztui.cpp" />
