@@ -1,4 +1,4 @@
-# ztui cheat base DX11
+# ZTUI BASE (DX11) (kernel integration with [ztdriver](https://github.com/zabbix-byte/ztdriver))
 ![Visitors](https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2Fzabbix-byte%2Fztui%2F&countColor=%23263759)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge&logo=windows&logoColor=white)](https://opensource.org/licenses/MIT)
 [![Python Version](https://img.shields.io/badge/C++20-blue?style=for-the-badge&logo=windows&logoColor=white)](https://www.python.org/downloads/)
@@ -10,10 +10,11 @@
 
 A user-friendly overlay and menu, Explore features like an intuitive menu with test options, handy hide and close buttons, and customizable themes! 🚀
 
+### Little preview 🔍
 ![image](https://github.com/zabbix-byte/ztui/assets/67012651/c0759acb-1d5a-4ebd-a163-2645ff9e8de3)
 
 
-### Customizable (make it yours)
+### Customizable 🎨
 ![image](https://github.com/zabbix-byte/ztui/assets/67012651/dabbf249-5a52-4e49-bfed-6f11282131c7)
 
 ### Acknowledgements and Credits
