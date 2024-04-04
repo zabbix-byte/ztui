@@ -7,6 +7,7 @@
 
 // ztui
 #include "../ztui/ztui.h"
+#include "../ztui/style/palet_utils.h"
 
 static std::string dest_window_name = "Counter-Strike 2";
 static std::string dest_window_class_name = "SDL_app";
@@ -36,7 +37,7 @@ void callback()
 
 
 int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, PSTR lpCmdLine, int nCmdShow)
-{
+{	
 	try {
 		Gui.AttachAnotherWindow(dest_window_name, dest_window_class_name, callback);
 	}

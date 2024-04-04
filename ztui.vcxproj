@@ -40,6 +40,8 @@
     <ClInclude Include="ztui\style\palet.h" />
     <ClInclude Include="ztui\style\style.h" />
     <ClInclude Include="ztui\style\widgets_style.h" />
+    <ClInclude Include="ztui\utils\ini.h" />
+    <ClInclude Include="ztui\utils\mini.h" />
     <ClInclude Include="ztui\widgets.h" />
     <ClInclude Include="ztui\ztui.h" />
     <ClInclude Include="ztui\ztui_base.h" />
@@ -60,10 +62,15 @@
     <ClCompile Include="demo\main.cpp" />
     <ClCompile Include="demo\main_menu.cpp" />
     <ClCompile Include="ztui\style\widgets_style.cpp" />
+    <ClCompile Include="ztui\utils\ini.cpp" />
+    <ClCompile Include="ztui\style\palet_utils.h" />
     <ClCompile Include="ztui\widgets.cpp" />
     <ClCompile Include="ztui\ztui.cpp" />
     <ClCompile Include="ztui\ztui_base.cpp" />
     <ClCompile Include="ztui\ztui_external.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ztui\style\gui.ini" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
@@ -167,8 +174,10 @@
     <PostBuildEvent>
       <Command>if "$(ConfigurationName)" == "Release" (
     if not exist "$(TargetDir)ztui\font" mkdir "$(TargetDir)ztui\font"
+    if not exist "$(TargetDir)ztui\style" mkdir "$(TargetDir)ztui\style"
     copy "$(SolutionDir)ztui\font\fa-solid-900.ttf" "$(TargetDir)ztui\font\fa-solid-900.ttf"
     copy "$(SolutionDir)ztui\font\Roboto-Medium.ttf" "$(TargetDir)ztui\font\Roboto-Medium.ttf"
+    copy "$(SolutionDir)ztui\style\gui.ini" "$(TargetDir)ztui\style\gui.ini"
 )</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
@@ -198,8 +207,10 @@
     <PostBuildEvent>
       <Command>if "$(ConfigurationName)" == "Release" (
     if not exist "$(TargetDir)ztui\font" mkdir "$(TargetDir)ztui\font"
+    if not exist "$(TargetDir)ztui\style" mkdir "$(TargetDir)ztui\style"
     copy "$(SolutionDir)ztui\font\fa-solid-900.ttf" "$(TargetDir)ztui\font\fa-solid-900.ttf"
     copy "$(SolutionDir)ztui\font\Roboto-Medium.ttf" "$(TargetDir)ztui\font\Roboto-Medium.ttf"
+    copy "$(SolutionDir)ztui\style\gui.ini" "$(TargetDir)ztui\style\gui.ini"
 )</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>

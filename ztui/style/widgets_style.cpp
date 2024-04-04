@@ -1,5 +1,5 @@
 #include "widgets_style.h"
-#include "palet.h"
+#include "palet_utils.h"
 
 void widgets_style::style_element_button(const bool no_hover_button, ImVec4 color)
 {
@@ -14,9 +14,9 @@ void widgets_style::style_element_button(const bool no_hover_button, ImVec4 colo
 void widgets_style::reset_style_element_button()
 {
 	ImGuiStyle& style = ImGui::GetStyle();
-	style.Colors[ImGuiCol_ButtonHovered] = ImGuiCol_ButtonHoveredDefault;
-	style.Colors[ImGuiCol_ButtonActive] = ImGuiCol_ButtonActiveDefault;
-	style.Colors[ImGuiCol_Button] = ImGuiCol_ButtonDefault;
+	style.Colors[ImGuiCol_ButtonHovered] = ztui_theme_palet::ImGuiCol_ButtonHoveredDefault;
+	style.Colors[ImGuiCol_ButtonActive] = ztui_theme_palet::ImGuiCol_ButtonActiveDefault;
+	style.Colors[ImGuiCol_Button] = ztui_theme_palet::ImGuiCol_ButtonDefault;
 }
 
 

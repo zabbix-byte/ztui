@@ -28,6 +28,9 @@
     <Filter Include="Header Files\zdriver_client">
       <UniqueIdentifier>{ecc58cfc-9e9c-4e14-b05e-4df2cc941098}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\ztui\utils">
+      <UniqueIdentifier>{87b1d870-1d31-453f-b149-b963f2e1ad3f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ztui\imgui\imstb_truetype.h">
@@ -111,6 +114,12 @@
     <ClInclude Include="ztdriver\ztdriver_client\ztdriver_client\process_utils.hpp">
       <Filter>Header Files\zdriver_client</Filter>
     </ClInclude>
+    <ClInclude Include="ztui\utils\ini.h">
+      <Filter>Header Files\ztui\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="ztui\utils\mini.h">
+      <Filter>Header Files\ztui\utils</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="demo\main.cpp">
@@ -161,5 +170,16 @@
     <ClCompile Include="ztui\style\widgets_style.cpp">
       <Filter>Header Files\ztui\style</Filter>
     </ClCompile>
+    <ClCompile Include="ztui\utils\ini.cpp">
+      <Filter>Header Files\ztui\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="ztui\style\palet_utils.h">
+      <Filter>Header Files\ztui\style</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ztui\style\gui.ini">
+      <Filter>Resource Files</Filter>
+    </None>
   </ItemGroup>
 </Project>

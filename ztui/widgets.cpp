@@ -1,6 +1,5 @@
 #include "widgets.h"
 #include "style/widgets_style.h"
-#include "style/style.h"
 
 void widgets::text_centered(const char* fmt, const float size, const float margin, ImVec4 rgba)
 {

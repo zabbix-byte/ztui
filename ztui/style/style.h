@@ -1,10 +1,18 @@
 #pragma once
-#include "../imgui/imgui.h"
-#include "palet.h"
+#include "palet_utils.h"
 
-static void ztui_styling()
+
+static bool palet_need_update = true;
+
+void ztui_styling()
 {
-	static ImGuiStyle& style = ImGui::GetStyle();
+	if (palet_need_update == true)
+	{
+		update_palet_ini();
+		palet_need_update = false;
+	}
+		
+	ImGuiStyle& style = ImGui::GetStyle();
 	style.Alpha = 1.0f;
 	style.DisabledAlpha = 1.0f;
 	style.WindowPadding = ImVec2(1.0f, 1.0f);
@@ -35,11 +43,11 @@ static void ztui_styling()
 	style.ColorButtonPosition = ImGuiDir_Right;
 	style.ButtonTextAlign = ImVec2(0.5f, 0.5f);
 	style.SelectableTextAlign = ImVec2(0.0f, 0.0f);
-	
+
 	style.Colors[ImGuiCol_Text] = ImVec4(1.0f, 1.0f, 1.0f, 1.0f);
 	style.Colors[ImGuiCol_TextDisabled] = ImVec4(0.2745098173618317f, 0.3176470696926117f, 0.4509803950786591f, 1.0f);
-	style.Colors[ImGuiCol_WindowBg] = ImGuiCol_WindowBgDefault;
-	style.Colors[ImGuiCol_ChildBg] = ImGuiCol_ChildBgDefault;
+	style.Colors[ImGuiCol_WindowBg] = ztui_theme_palet::ImGuiCol_WindowBgDefault;
+	style.Colors[ImGuiCol_ChildBg] = ztui_theme_palet::ImGuiCol_ChildBgDefault;
 	style.Colors[ImGuiCol_PopupBg] = ImVec4(0.0784313753247261f, 0.08627451211214066f, 0.1019607856869698f, 1.0f);
 	style.Colors[ImGuiCol_Border] = ImVec4(0.1568627506494522f, 0.168627455830574f, 0.1921568661928177f, 1.0f);
 	style.Colors[ImGuiCol_BorderShadow] = ImVec4(0.0784313753247261f, 0.08627451211214066f, 0.1019607856869698f, 1.0f);
@@ -57,9 +65,9 @@ static void ztui_styling()
 	style.Colors[ImGuiCol_CheckMark] = ImVec4(0.9725490212440491f, 1.0f, 0.4980392158031464f, 1.0f);
 	style.Colors[ImGuiCol_SliderGrab] = ImVec4(0.971993625164032f, 1.0f, 0.4980392456054688f, 1.0f);
 	style.Colors[ImGuiCol_SliderGrabActive] = ImVec4(1.0f, 0.7953379154205322f, 0.4980392456054688f, 1.0f);
-	style.Colors[ImGuiCol_Button] = ImGuiCol_ButtonDefault;
-	style.Colors[ImGuiCol_ButtonHovered] = ImGuiCol_ButtonHoveredDefault;
-	style.Colors[ImGuiCol_ButtonActive] = ImGuiCol_ButtonActiveDefault;
+	style.Colors[ImGuiCol_Button] = ztui_theme_palet::ImGuiCol_ButtonDefault;
+	style.Colors[ImGuiCol_ButtonHovered] = ztui_theme_palet::ImGuiCol_ButtonHoveredDefault;
+	style.Colors[ImGuiCol_ButtonActive] = ztui_theme_palet::ImGuiCol_ButtonActiveDefault;
 	style.Colors[ImGuiCol_Header] = ImVec4(0.1414651423692703f, 0.1629818230867386f, 0.2060086131095886f, 1.0f);
 	style.Colors[ImGuiCol_HeaderHovered] = ImVec4(0.1072951927781105f, 0.107295036315918f, 0.1072961091995239f, 1.0f);
 	style.Colors[ImGuiCol_HeaderActive] = ImVec4(0.0784313753247261f, 0.08627451211214066f, 0.1019607856869698f, 1.0f);

@@ -7,7 +7,6 @@
 #include "../ztui/widgets.h"
 #include "../ztui/style/widgets_style.h"
 #include "../ztui/style/style.h"
-#include "../ztui/style/palet.h"
 #include "../ztui/ztui.h"
 #include "../ztui/font/icons_font_awesome.h"
 
@@ -28,19 +27,35 @@ void settings_menu()
 	if (ImGui::BeginChild(8, ImVec2(450, 460), true, ImGuiWindowFlags_AlwaysUseWindowPadding))
 	{
 		
+		ImGui::SameLine();
+		if (widgets::button(
+			ICON_FA_SAVE,
+			0.8f,
+			-1.f,
+			false,
+			ztui_theme_palet::active,
+			ImVec2(0, 0),
+			true,
+			ImVec4(0.1176470592617989f, 0.1333333402872086f, 0.1490196138620377f, 1.0f)
+		))
+		{
+			write_theme_to_ini();
+		}
+
+		ImGui::SameLine();
 		widgets::text_centered("Customize", 1.f, -1.f, ztui_theme_palet::primary);
+
 		widgets::space_separator();
 
-		ImGui::ColorEdit3("Background", (float*)&ImGuiCol_WindowBgDefault);
+		ImGui::ColorEdit3("Background", (float*)&ztui_theme_palet::ImGuiCol_WindowBgDefault);
 		float min_win_gb = 0, max_win_gb = 1.f;
-		Gui.SliderScalarEx1("Opacity B", ImGuiDataType_Float, &ImGuiCol_WindowBgDefault.w, &min_win_gb, &max_win_gb, "%.1f", ImGuiSliderFlags_None);
-
-		widgets::space_separator();
-		ImGui::ColorEdit3("Menus", (float*)&ImGuiCol_ChildBgDefault);
+		Gui.SliderScalarEx1("Opacity B", ImGuiDataType_Float, &ztui_theme_palet::ImGuiCol_WindowBgDefault.w, &min_win_gb, &max_win_gb, "%.1f", ImGuiSliderFlags_None);
+		ImGui::ColorEdit3("Menus", (float*)&ztui_theme_palet::ImGuiCol_ChildBgDefault);
 		float min_child_gb = 0, max_child_gb = 1.f;
-		Gui.SliderScalarEx1("Opacity M", ImGuiDataType_Float, &ImGuiCol_ChildBgDefault.w, &min_child_gb, &max_child_gb, "%.1f", ImGuiSliderFlags_None);
+		Gui.SliderScalarEx1("Opacity M", ImGuiDataType_Float, &ztui_theme_palet::ImGuiCol_ChildBgDefault.w, &min_child_gb, &max_child_gb, "%.1f", ImGuiSliderFlags_None);
 
 		widgets::space_separator();
+		ImGui::ColorEdit3("Logo", (float*)&ztui_theme_palet::logo);
 		ImGui::ColorEdit3("Title", (float*)&ztui_theme_palet::title);
 		ImGui::ColorEdit3("Primary", (float*)&ztui_theme_palet::primary);
 		ImGui::ColorEdit3("Secundary", (float*)&ztui_theme_palet::secundary);
@@ -97,7 +112,7 @@ void main_menu()
 		if (ImGui::BeginChild(2, ImVec2(200, 578), false))
 		{
 
-			widgets::text_centered(ICON_FA_DRAGON"  ZTUI", 1.f, 32.f, ztui_theme_palet::title);
+			widgets::text_centered(ICON_FA_DRAGON"  ZTUI", 1.f, 32.f, ztui_theme_palet::logo);
 			widgets::text_centered("BY ZABBIX", 0.8f, 55.f, ztui_theme_palet::secundary);
 			widgets::space_separator();
 			ImGui::Separator();
@@ -147,7 +162,5 @@ void main_menu()
 
 		ztui_styling();
 	}ImGui::End();
-	
-
 }
 

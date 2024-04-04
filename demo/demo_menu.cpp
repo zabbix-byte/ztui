@@ -1,7 +1,7 @@
 #include "demo_menu.h"
 #include "../ztui/widgets.h"
 
-#include "../ztui/style/palet.h"
+#include "../ztui/style/palet_utils.h"
 #include "../ztui/ztui.h"
 
 

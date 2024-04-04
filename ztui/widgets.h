@@ -1,6 +1,6 @@
 #pragma once
 #include "imgui/imgui.h"
-#include "style/style.h"
+#include "style/palet_utils.h"
 
 namespace widgets
 {
@@ -14,7 +14,7 @@ namespace widgets
 		ImVec4 rgba,
 		const ImVec2 size_button = ImVec2(0, 0),
 		const bool no_hover = false,
-		const ImVec4 color = ImGuiCol_ButtonDefault
+		const ImVec4 color = ztui_theme_palet::ImGuiCol_ButtonDefault
 	);
 	void space_separator();
 }

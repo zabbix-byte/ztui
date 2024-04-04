@@ -1,6 +1,5 @@
 #include "ztui_external.h"
 
-
 // D3D11 Device
 namespace Ztui
 {
@@ -68,6 +67,9 @@ namespace Ztui
 
     void ZtuiExternal::NewWindow(std::string WindowName, Vec2 WindowSize, std::function<void()> CallBack)
     {
+
+
+
         if (!CallBack)
             throw OSException("CallBack is empty");
         if (WindowName.empty())
@@ -149,7 +151,6 @@ namespace Ztui
 
     void ZtuiExternal::MainLoop()
     {
-
         while (!EndFlag)
         {
             if (PeekEndMessage())
